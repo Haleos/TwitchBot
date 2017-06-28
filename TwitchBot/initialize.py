@@ -1,3 +1,4 @@
+import string
 from socket import sendMessage
 
 def joinRoom(s):
@@ -14,7 +15,7 @@ def joinRoom(s):
         sendMessage(s, "Successfully joined chat")
 
 def loadingComplete(line):
-    if("End of /NAMES list" in line) :
+    if"End of /NAMES list" in line:
         return False
     else:
-        return True           
+        return True
