@@ -1,3 +1,5 @@
+import string
+
 from Socket import openSocket
 from initialize import joinRoom
 
